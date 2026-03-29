@@ -2,7 +2,6 @@
 
 这是一个基于 **Vite + TypeScript + Three.js + lil-gui** 构建的课程级数字孪生原型，在一个统一的三维场景中实时展示海上能源场站的灾害态势与联动机制。
 
-![Screenshot](./public/screenshot.png)
 
 ## 主要特性
 
