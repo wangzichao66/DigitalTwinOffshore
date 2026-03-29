@@ -1,24 +1,18 @@
-# Digital Twin Offshore (海上能源场站数字孪生预警平台)
+# 海上能源场站多灾种数字孪生预警平台
 
-[![Built with Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
-[![Powered by Three.js](https://img.shields.io/badge/Powered_by-Three.js-black?style=flat-square&logo=three.js)](https://threejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+这是一个基于 **Vite + TypeScript + Three.js + lil-gui** 构建的课程级数字孪生原型，在一个统一的三维场景中实时展示海上能源场站的灾害态势与联动机制。
 
-A web-based 3D digital twin prototype for offshore energy platforms. It provides real-time visualization of multi-hazard simulations (oil spills, gas cloud diffusion) and dynamic sensor networks.
+![Screenshot](./public/screenshot.png)
 
-这是一个基于 **Vite + TypeScript + Three.js + lil-gui** 构建的课程级数字孪生原型，在一个统一的 3D 三维场景中综合展示海上能源场站的灾害态势与自动化响应机制。
+## 主要特性
 
-![Screenshot](./public/screenshot.png) <!-- 建议在 public 文件夹添加一张名为 screenshot.png 的截图展示给 GitHub 用户 -->
+- **海面溢油模拟**：利用动态粒子系统渲染海面溢油扩散范围
+- **气云扩散模拟**：区分 LNG（重气）和 CNG（轻气）的三维空间扩散行为
+- **动态传感器感知**：实时展示空间内的风速、海流、气体及溢油传感器状态与告警
+- **工况交互调节**：可通过面板实时调整风向、风速、海流、浪高与泄漏速率等仿真环境参数
+- **智能风险评估**：根据波及范围自动触发分级告警、围油栏部署及撤离路线提示
 
-## ✨ 主要特性 (Features)
-
-- **🌊 海面溢油模拟 (Oil Spill Diffusion)** - 动态粒子效果计算与渲染海面溢油扩散范围
-- **☁️ 空中气云扩散 (Gas Cloud Diffusion)** - 区分 LNG (重气) 和 CNG (轻气) 的 3D 气体扩散行为
-- **🔌 动态传感器感知 (Sensor Network)** - 三维空间内的传感器（风速、海流、气体、溢油）实时状态与告警反馈
-- **🕹️ What-If 工况调节 (Interactive Dashboard)** - 实时调节风向、风速、海流、浪高、泄漏速率等参数
-- **🛡️ 智能风险评估联动 (Risk Engine)** - 自动根据受波及范围触发智能告警、部署围油栏和人员撤离路线
-
-## 🚀 快速启动 (Quick Start)
+## 快速启动
 
 ### 1. 安装依赖
 
